@@ -2,13 +2,9 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 const Home = () => {
-  const [panier, setPanier] = useState([]);
-  const panierData = useSelector((state) => state.panier);
+  const panierData = useSelector((state) => state);
 
-  useEffect(() => {
-    setPanier(panierData);
-    console.log(panierData);
-  }, [panierData]);
+  console.log(panierData);
 
   return (
     <div>

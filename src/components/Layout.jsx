@@ -1,22 +1,24 @@
+import { Link } from "react-router-dom";
+
 const Layout = () => {
   return (
     <div>
       <ul>
-        <a href="/">
+        <Link to={"/"}>
           <li>Home</li>
-        </a>
+        </Link>
 
-        <a href="/livres">
+        <Link to="/livres">
           <li>Livres</li>
-        </a>
+        </Link>
 
-        <a href="/inscription">
+        <Link to="/inscription">
           <li>Inscription</li>
-        </a>
+        </Link>
 
-        <a href="/contact">
+        <Link to="/contact">
           <li>Contact</li>
-        </a>
+        </Link>
       </ul>
     </div>
   );
